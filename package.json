@@ -1,0 +1,19 @@
+{
+  "name": "orange",
+  "version": "1.0.0",
+  "description": "Landing page Orange",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "html"
+  ],
+  "author": "nihadkeric",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
