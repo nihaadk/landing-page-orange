@@ -137,7 +137,13 @@ body {
     clear: both; }
   .row [class^="col-"] {
     background-color: orangered;
-    float: left; }
+    float: left;
+    height: 80px;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
