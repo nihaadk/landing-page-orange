@@ -167,7 +167,18 @@ body {
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #ffb300;
-  padding: 3px; }
+  padding: 3px;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #ffb300;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translate(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 5rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translate(0); }
 
 .row {
   max-width: 114rem;
