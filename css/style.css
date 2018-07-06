@@ -180,6 +180,18 @@ body {
   box-shadow: 0 5rem 2rem rgba(0, 0, 0, 0.15);
   transform: translate(0); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: aqua;
+    height: 50rem;
+    color: white;
+    font-size: 2rem;
+    transition: all .8s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -283,6 +295,11 @@ body {
   background-image: linear-gradient(to right bottom, rgba(253, 216, 53, 0.8), rgba(251, 140, 0, 0.8)), url(../img/o2.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -15rem; }
+  margin-top: -12rem;
+  margin-bottom: 10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0; }

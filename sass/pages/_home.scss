@@ -13,8 +13,14 @@
         url(../img/o2.jpg);
     background-size: cover;
     transform: skewY(-7deg);
-    margin-top: -15rem;
+    margin-top: -12rem;
+    margin-bottom: 10rem;
     & > * {
         transform: skewY(7deg);
     }
+}
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 50rem 0;
 }
