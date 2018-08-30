@@ -126,12 +126,12 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s; }
-  @media (max-width: 56.25em) {
-    .heading-secondary {
-      font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -624,6 +624,12 @@ body {
   margin-bottom: 80px; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;
@@ -632,6 +638,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -650,8 +663,13 @@ body {
   background-image: linear-gradient(to right bottom, rgba(253, 216, 53, 0.8), rgba(251, 140, 0, 0.8)), url(../img/beatch.jpg);
   background-position: top;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 75rem, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header .logo-box {
     position: absolute;
     top: 4rem;
@@ -680,6 +698,14 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -691,6 +717,14 @@ body {
   background-image: radial-gradient(#fdd835, #fb8c00);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -724,6 +758,9 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
   transition: all .4s; }
+  @media (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 3.6rem; } }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
