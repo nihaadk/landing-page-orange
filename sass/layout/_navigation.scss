@@ -76,6 +76,10 @@
         margin: 1rem;
     }
 
+    &__item:visited ~ &__background {
+        transform: scale(80);
+    } 
+
     &__link {
         &:link,
         &:visited {
