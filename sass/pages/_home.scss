@@ -2,6 +2,8 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+    margin-left: 5rem;
+    margin-right: 5rem;
 
     @include respond(tab-port) {
         padding: 20rem 0;
@@ -62,7 +64,7 @@
                                     rgba($color-white, .9) 0%,
                                     rgba($color-white, .9) 50%,
                                     transparent 50%), 
-                                    url(../../img/see.jpg);
+                                    url(../../img/drops-fruits-orange.jpg);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
