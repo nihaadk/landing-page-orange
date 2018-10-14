@@ -734,7 +734,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(253, 216, 53, 0.8), rgba(251, 140, 0, 0.8)), url(../img/beatch.jpg);
+  background-image: linear-gradient(to right bottom, rgba(253, 216, 53, 0.8), rgba(251, 140, 0, 0.8)), url(../img/head-orange.jpg);
   background-position: top;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -934,7 +934,7 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/see.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/drops-fruits-orange.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
